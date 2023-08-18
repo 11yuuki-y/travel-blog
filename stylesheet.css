@@ -1,0 +1,384 @@
+@charset "utf-8";
+
+/* 共通 */
+html {
+  font-size: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-size: 0.875rem;
+  font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  padding: 0 16px;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* header */
+#header {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: #FFFFFF;
+}
+
+#header > .title {
+  list-style: none;
+  width: 874px;
+  height: 30px;
+  margin: 0;
+  padding:20px 16px;
+}
+
+#header > .title a {
+  display: inline-block;
+  height: 30px;
+}
+
+#header > nav > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 39px;
+  color: #E5DEE6;
+  background-color: #333333;
+}
+
+#header > nav > ul >li {
+  color: #FFFFFF;
+  padding: 10px 60px 10px 0;
+}
+
+
+/* pickup */
+#pickup {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 150px;
+  margin-bottom: 60px;
+}
+
+#pickup > article {
+  width: 32%;
+}
+
+#pickup > article > h4 {
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#pickup > article > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#pickup > article > div {
+ text-align: center;
+}
+
+.readmore {
+  font-size: 0.875rem;
+  text-decoration: none;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 0.25px;
+}
+
+.readmore:link {
+  color: #333333;
+}
+
+.readmore:visited {
+  color: #333333;
+}
+
+.readmore:hover {
+  border-style: none;
+}
+
+/* container */
+/* main */
+#container {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+main {
+  width: 65%;
+}
+
+main article {
+  margin-bottom: 80px;
+}
+
+.main-title {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.main-list {
+  list-style: none;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.main-list > li {
+  margin: 0 20px 0 0;
+}
+
+#container > main > article > img {
+  object-fit: cover;
+}
+
+.main-text {
+  padding: 10px 40px 30px 40px;
+  text-align: left;
+  font-size: 1rem;
+} 
+
+#container > main > article > div {
+  text-align: center;
+}
+
+
+/* aside */
+aside {
+  width: 30%;
+  padding: 20px;
+  margin-left: 15px;
+}
+
+
+/* Profile */
+#Profile {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#Profile > img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.name {
+  margin-bottom: 30px;
+  font-size: 1.125rem;
+}
+
+.profile-text {
+  text-align: left;
+}
+
+
+/* Ranking */
+#Ranking {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#Ranking > article > p {
+  margin-bottom: 30px;
+}
+
+.profile-text {
+  text-align: left;
+}
+
+
+/* Archive */
+#Archive {
+  margin-bottom: 60px;
+}
+
+#Archive > ul {
+  list-style: none;
+  border-bottom: solid 1px #777;
+}
+
+#Archive > ul > li {
+  border-top: solid 1px #777;
+  text-align: left;
+  padding: 20px;
+}
+
+#Archive > ul > li > a {
+  text-decoration: none;
+}
+
+#Archive > ul > li > a:link {
+  color: #333333;
+}
+
+#Archive > ul > li > a:visited {
+  color: #333333;
+}
+
+
+/* footer */
+#content {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+#item {
+  width: 30%;
+}
+
+#item a {
+  text-decoration: none;
+}
+
+#item a:link {
+  color: #333333;
+}
+
+#item a:visited {
+  color: #333333;
+}
+
+.about-title {
+  margin-bottom: 30px;
+}
+
+.menu-title {
+  margin-bottom: 30px;
+}
+
+.twitter-title {
+  margin-bottom: 30px;
+}
+
+.about-text {
+  margin-bottom: 20px;
+}
+
+.about-list {
+  padding-left: 16px;
+}
+
+.menu-list {
+  list-style: none;
+}
+
+#item > .about-list > li {
+  margin-bottom: 10px;
+}
+
+#item > .menu-list > li {
+  border-top: 1px solid #777;
+  text-align: left;
+  padding: 20px;
+}
+
+#item > .menu-list {
+  border-bottom: 1px solid #777;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 767px) {
+
+  
+  header > nav {
+    overflow-x: scroll;
+  }
+
+  #pickup {
+    display: block;
+    padding-top: 141px;
+    margin-bottom: 100px;
+  }
+
+  #pickup > article {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #container {
+    display: block;
+  }
+  
+  main {
+    width: 100%;
+  }
+
+  aside {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  #content {
+    display: block;
+  }
+
+  #item {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
